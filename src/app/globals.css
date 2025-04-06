@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-black;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+
+  /* Typography */
+  h1, h2, h3 {
+    @apply font-light;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-200;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-300;
+  }
+}
