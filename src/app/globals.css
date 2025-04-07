@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply bg-white text-black;
+    @apply antialiased text-neutral-900;
     font-feature-settings: "liga" 1, "kern" 1;
   }
 
@@ -42,4 +42,24 @@
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-neutral-300;
   }
+
+  /* Refined table styles */
+  table {
+    font-feature-settings: "tnum" 1;
+  }
+}
+
+/* Custom hover effect for project links */
+.hover\:text-neutral-500:hover {
+  transition: color 0.2s ease;
+}
+
+/* Subtle animation for table row hover */
+tr {
+  transition: background-color 0.2s ease;
+}
+
+/* Custom selection color */
+::selection {
+  @apply bg-neutral-100;
 }
