@@ -39,12 +39,13 @@ export const projects: Project[] = [
     }
   },
   {
-    id: 'india-dance',
+    id: 'balam-pichkari',
     name: 'Balam Pichkari',
     type: 'Performance Video',
     year: 2023,
+    link: '/balam-pichkari',
     content: {
-      description: 'I went on a solo trip to India and decided to put this project together, that blends a variety of my interests of dance, travel, and art projects. Interesting that if I waited just a little bit longer, I may not have moved forward with it (knowing that AI could replicate this easily).',
+      description: 'I went on a solo trip to India and decided to put this project together, that blends a variety of my interests of dance, travel, and art projects. Interesting that if I waited just a little bit longer, I may not have moved forward with it (knowing that AI could replicate this easily). I even made a BTS video, you can see [here](https://www.instagram.com/reel/CpakINtA9r3/).',
       tweetId: '1651703013361238016',
       images: [
         {

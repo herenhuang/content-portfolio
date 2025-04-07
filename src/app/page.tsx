@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen">
       {/* Left Panel - Project Table */}
-      <div className="w-[30%] border-r border-neutral-200">
+      <div className="fixed top-0 left-0 w-[30%] h-screen">
         {/* Navigation Header */}
         <div className="p-8 border-b border-neutral-200 space-y-2">
           <h1 className="text-2xl font-light">Helen Huang</h1>
@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       
       {/* Right Panel - Project Content */}
-      <div className="w-[70%] p-12">
+      <div className="ml-[30%] w-[70%]">
         <ProjectContent project={selectedProject} />
       </div>
     </main>
